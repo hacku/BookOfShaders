@@ -1,5 +1,5 @@
 // Created with Shade for iPad
-Shader "Shade/02 - Uniforms - Exercise"
+Shader "Shade/02 - Uniforms - Screenposition"
 {
     Properties
     {

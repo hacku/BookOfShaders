@@ -1,54 +1,54 @@
 {
-          "name":"02 - Uniforms - Exercise",
+          "name":"02 - Uniforms - Screenposition",
           "options":{
-            "camera":{
-              "ry":0.0,
-              "zoom":0.3,
-              "rx":0.0
-            },
             "scenes":{
               "Sky":{
-                "bloomEnabled":true,
+                "skyColor":[0.35,0.37,0.42],
                 "modelTransform":{
-                  "scale":[1.0,1.0,1.0],
+                  "rotation":[0.0,-0.0,0.0],
                   "position":[0.0,1.2830910682678,0.0],
-                  "rotation":[0.0,-0.0,0.0]
+                  "scale":[1.0,1.0,1.0]
                 },
+                "environmentExposure":0.0,
                 "horizonColor":[0.15,0.15,0.15],
+                "sunColor":[1.0,1.0,1.0],
+                "showGroundPlane":true,
+                "environmentFade":0.0,
                 "environmentBlur":0.0,
                 "bloomSettings":{
-                  "softThreshold":0.5,
                   "iterations":5,
+                  "softThreshold":0.5,
                   "intensity":0.80000001192093,
                   "threshold":1.1000000238419
                 },
-                "camera":{
-                  "ry":-36.551175689697,
-                  "zoom":3.3333333333333,
-                  "rx":26.677005767822,
-                  "target":[0.0,1.2830910682678,0.0]
-                },
-                "environmentFade":0.0,
+                "sunAngle":[45,135],
+                "exposure":1.0,
+                "sunIntensity":0.25,
+                "groundColor":[0.12,0.13,0.15],
                 "tonemapping":false,
                 "env":"Atmosphere",
-                "sunIntensity":0.25,
-                "showGroundPlane":true,
-                "environmentExposure":0.0,
-                "sunAngle":[45,135],
-                "sunColor":[1.0,1.0,1.0],
-                "skyColor":[0.35,0.37,0.42],
-                "exposure":1.0,
-                "groundColor":[0.12,0.13,0.15]
+                "bloomEnabled":true,
+                "camera":{
+                  "zoom":3.3333333333333,
+                  "target":[0.0,1.2830910682678,0.0],
+                  "ry":-36.551175689697,
+                  "rx":26.677005767822
+                }
               }
             },
-            "currentScene":"Sky",
+            "camera":{
+              "zoom":0.3,
+              "ry":0.0,
+              "rx":0.0
+            },
             "workspace":{
-              "sy":244.29014263875,
-              "sx":294.62590870974,
+              "sx":285.17365346072,
+              "sy":284.01020489461,
               "zoom":0.61486949838642
             },
-            "previewType":"Sphere",
-            "currentModel":"Sphere"
+            "currentModel":"Sphere",
+            "currentScene":"Sky",
+            "previewType":"Sphere"
           },
           "nodes":[{
               "uuid":"536355a4-4ed2-4b10-98a4-264a9634cc7b",
@@ -87,47 +87,47 @@
               "y":226.5,
               "options":{
                 "userLabel":"Main",
-                "blendMode":"disabled",
                 "tangentSpaceNormals":true,
+                "blendMode":"disabled",
                 "shadingModel":"physical",
-                "renderQueue":"solid",
-                "cullFace":"back",
                 "depthWrite":true,
-                "instanceCount":1
+                "renderQueue":"solid",
+                "instanceCount":1,
+                "cullFace":"back"
               },
               "inputs":{
-                "rough":{
-                  "value":0.32467532157898
+                "opacityClip":{
+                  "value":0.0
                 },
                 "behind":{
                   "value":[0,0,0]
                 },
-                "diffuse":{
-                  "value":[1.0,1.0,1.0,1.0]
-                },
-                "emissiveStrength":{
-                  "value":0.0
+                "offset":{
+                  "value":[0,0,0]
                 },
                 "instanceCount":{
                   "value":1
                 },
+                "emissiveStrength":{
+                  "value":0.0
+                },
+                "rough":{
+                  "value":0.32467532157898
+                },
                 "metallic":{
                   "value":0.0
-                },
-                "opacityClip":{
-                  "value":0.0
-                },
-                "opacity":{
-                  "value":1.0
                 },
                 "occlusion":{
                   "value":1.0
                 },
+                "diffuse":{
+                  "value":[1.0,1.0,1.0,1.0]
+                },
                 "normal":{
                   "value":[0,0,1]
                 },
-                "offset":{
-                  "value":[0,0,0]
+                "opacity":{
+                  "value":1.0
                 },
                 "emissionColor":{
                   "value":[0.0,0.0,0.0,0.0]
@@ -135,15 +135,15 @@
               }
             }],
           "connections":[[1,"position",2,"value",{
-                "r":["r"],
                 "sizeOut":4,
-                "g":["g"]
+                "g":["g"],
+                "r":["r"]
               },1,"bcaedb7b-2cef-473a-84cf-7d9682eb3f01"],[2,"value",3,"diffuse",{
-                "b":["b"],
-                "a":[],
                 "g":["g"],
                 "sizeOut":3,
-                "r":["r"]
+                "r":["r"],
+                "a":[],
+                "b":["b"]
               },1,"b9352be0-009b-4556-a7fc-67527566d2b9"]],
           "version":5
         }

@@ -1,5 +1,5 @@
 {
-    name = "02 - Uniforms - Exercise",
+    name = "02 - Uniforms - Screenposition",
 
     options =
     {
