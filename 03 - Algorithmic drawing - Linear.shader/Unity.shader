@@ -37,7 +37,6 @@ Shader "Shade/03 - Algorithmic drawing - Linear"
             UNITY_INITIALIZE_OUTPUT(Input, o);
             o.texcoord = v.texcoord;
             o.screenPos = ComputeGrabScreenPos(UnityObjectToClipPos(v.vertex));
-            v.vertex.xyz += float3(0.0, 0.0, 0.0);
         }
 
         void surf (Input IN, inout SurfaceOutput o)

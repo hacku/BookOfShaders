@@ -26,7 +26,6 @@
         [[
             void vertex(inout Vertex v, out Input o)
             {
-                    v.position += vec3(0.0, 0.0, 0.0);
             }
         ]],
 
@@ -41,7 +40,6 @@
                 o.diffuse = add_20.rgb;
                 o.emission = vec3(0.0, 0.0, 0.0);
                 o.opacity = 1.0;
-                if (o.opacity < 0.0) discard;
             }
         ]]
     }
